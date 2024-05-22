@@ -5,7 +5,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-       git 'https://github.com/princegalland/terraform-pipeline-demo.git'
+   //    git 'https://github.com/princegalland/terraform-pipeline-demo.git'
+checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/princegalland/terraform-pipeline-demo.git']]])
 
           }
         }
