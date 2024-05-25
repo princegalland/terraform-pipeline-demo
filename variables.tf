@@ -6,8 +6,12 @@ variable "tag" {
   default = "Demo-Instance"
 }
 
+//variable "ami_name_value" {
+//  default = "amzn-ami-vpc-nat*"
+//}
+
 variable "ami_name_value" {
-  default = "amzn-ami-vpc-nat*"
+  default = "Ubuntu_20.04-x86_64-SQL_2022_Standard-2023.10.16"
 }
 
 variable "ami_virtualization_type" {
